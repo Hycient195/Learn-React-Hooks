@@ -1,0 +1,83 @@
+
+*{
+  box-sizing: border-box;
+}
+
+
+
+/*===========*/
+/* Variables */
+/*===========*/
+:root{
+  --base-padding: 1em;
+  --base-margin: 1em;
+  --base-border-radius: 10px;
+  --base-gap: 1em;
+  --light-blue: rgb(11, 125, 196);
+  --lighter-blue: rgb(20, 152, 235);
+  --base-padding: 1em;
+  --base-margin: 1em;
+  --base-gap: 1em;
+  --outline: rgba(0, 0, 0, 0.25);
+  --pink-red: #EA454C;
+  --light-green: #07E77B;
+  --green: #165a39;
+  --light-black: rgba(0,0,0, 0.9);
+  --black: rgba(0,0,0, 0.03);
+}
+
+body {
+  margin: 0;
+  font-family: Fira Code;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+a{
+  color: inherit;
+}
+
+
+.hidden{
+  display: none;
+}
+
+
+.not-hidden{
+  display: unset;
+}
+
+
+.green-text{
+  color: var(--green);
+}
+
+.light-green-text{
+  color: var(--light-green);
+}
+
+.black-text{
+  color: black !important;
+}
+
+.red-text{
+  color: rgba(225,10,10,0.8);
+}
+
+.orange-text{
+  color: orange !important;
+}
+
+.bg-green{
+  background-color: var(--green);
+}
+
+.bg-light-green{
+  background-color: var(--light-green);
+}
