@@ -90,3 +90,7 @@ pre{
   border: 1px solid silver;
   padding: 1em;
 }
+
+hr{
+  margin: 4em 0;
+}
