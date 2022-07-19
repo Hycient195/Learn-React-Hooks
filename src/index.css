@@ -31,6 +31,7 @@ body {
   font-family: Fira Code;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: justify;
 }
 
 code {
@@ -42,7 +43,6 @@ code {
 a{
   color: inherit;
 }
-
 
 .hidden{
   display: none;
@@ -80,4 +80,13 @@ a{
 
 .bg-light-green{
   background-color: var(--light-green);
+}
+
+.centralize{
+  text-align: center;
+}
+
+pre{
+  border: 1px solid silver;
+  padding: 1em;
 }
