@@ -12,4 +12,9 @@ body{
 }
 
 
+@media (max-width: 750px){
+  body{
+    padding: 1.5em;
+  }
+}
 
