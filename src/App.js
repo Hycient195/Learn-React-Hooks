@@ -4,6 +4,7 @@ import UseContextHook from './03. UseContext/01. UseContext';
 import UseReducerHook from './04. UseReducer/01. UseReducerHook';
 import ObjecStateWithUseReducer from './04. UseReducer/02. Object_State_With_UseReducer';
 import ObjectActionWithUseReducer from './04. UseReducer/03. Object_Action_With_UseReducer';
+import MultipleUseReducers from './04. UseReducer/04. Multiple_UseReducers';
 import './App.css';
 
 
@@ -40,6 +41,8 @@ function App() {
       <ObjecStateWithUseReducer />
       <hr />
       <ObjectActionWithUseReducer />
+      <hr />
+      <MultipleUseReducers />
       
       {/* <BrowserRouter>
         <Routes>
