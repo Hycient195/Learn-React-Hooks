@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 import { user, article } from './constants'
 import UseEffectCleanup from './02. UseEffect/04. UseEffect_Clenup';
 import UseContextHook from './03. UseContext/01. UseContext';
@@ -7,12 +7,32 @@ import ObjecStateWithUseReducer from './04. UseReducer/02. Object_State_With_Use
 import ObjectActionWithUseReducer from './04. UseReducer/03. Object_Action_With_UseReducer';
 import MultipleUseReducers from './04. UseReducer/04. Multiple_UseReducers';
 import './App.css';
+import UseReducerWithContext from './04. UseReducer/05. UseReducer_With_Context';
+
+
+
+const initialState = 0;
+const reducer = (currentState, action) =>{
+  switch (action) {
+    case "increament":
+      return currentState + 1
+    case "decreament":
+      return currentState - 1;
+    case "reset":
+      return initialState;
+    default:
+      return currentState
+  }
+}
 
 
 export const UserContext = React.createContext();
 export const ArticleContext = React.createContext();
+export const CountContext = React.createContext();
 
 function App() {
+
+  const [ count, dispatchCount ] = useReducer(reducer, initialState);
 
   return (
     <div className="App">
@@ -33,6 +53,10 @@ function App() {
       <ObjectActionWithUseReducer />
       <hr />
       <MultipleUseReducers />
+      <hr />
+      <CountContext.Provider value={{ count, dispatchCount }} >
+        <UseReducerWithContext />
+      </CountContext.Provider>
       
       {/* <BrowserRouter>
         <Routes>
