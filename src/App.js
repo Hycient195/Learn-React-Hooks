@@ -1,6 +1,7 @@
 import React from 'react';
 import UseEffectCleanup from './02. UseEffect/04. UseEffect_Clenup';
 import UseContextHook from './03. UseContext/01. UseContext';
+import UseReducerHook from './04. UseReducer/01. UseReducerHook';
 import './App.css';
 
 
@@ -24,13 +25,15 @@ function App() {
     <div className="App">
       <h1 className="title centralize">React Hooks</h1>
       <hr />
-      <UseEffectCleanup />
+      {/* <UseEffectCleanup /> */}
       <hr />
       <UserContext.Provider value={user} >
         <ArticleContext.Provider value={article} >
-          <UseContextHook />
+          {/* <UseContextHook /> */}
         </ArticleContext.Provider>
       </UserContext.Provider>
+      <hr />
+      <UseReducerHook />
       
       {/* <BrowserRouter>
         <Routes>
