@@ -1,4 +1,5 @@
 import React from 'react';
+import { user, article } from './constants'
 import UseEffectCleanup from './02. UseEffect/04. UseEffect_Clenup';
 import UseContextHook from './03. UseContext/01. UseContext';
 import UseReducerHook from './04. UseReducer/01. UseReducerHook';
@@ -12,17 +13,6 @@ export const UserContext = React.createContext();
 export const ArticleContext = React.createContext();
 
 function App() {
-  const user = {
-    name: "Michael",
-    age: 42,
-    isOnline: false
-  }
-
-  const article = {
-    title: "Transitioning to a senior software engineer",
-    author: "John Doe",
-    timesRead: 30
-  }
 
   return (
     <div className="App">
