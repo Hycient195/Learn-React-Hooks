@@ -90,11 +90,10 @@ a{
 /*  */
 /*==========================*/
 pre{
-  outline: 1px solid silver;
+  border: 1px solid silver;
   padding: 1em;
   overflow-x: scroll;
   border-left: 3px solid red;
-  /* border-right: 0.5em solid white; */
 }
 
 hr{

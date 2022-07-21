@@ -167,6 +167,11 @@ export default function UseReducerHook(){
           <button onClick={()=> dispatchCount("reset")} >Reset</button>
         </dd>
       </dl>  
+
+      <p>
+        Let's take the useReducer hook further by seeing how it can be
+        used with an object state.
+      </p>
     </>
   )
 }
