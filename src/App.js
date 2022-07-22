@@ -8,6 +8,7 @@ import ObjectActionWithUseReducer from './04. UseReducer/03. Object_Action_With_
 import MultipleUseReducers from './04. UseReducer/04. Multiple_UseReducers';
 import './App.css';
 import UseReducerWithContext from './04. UseReducer/05. UseReducer_With_Context';
+import DataFetchingWithUseReducer from './04. UseReducer/06. Data_Fetching_With_UseReducer';
 
 
 
@@ -57,7 +58,8 @@ function App() {
       <CountContext.Provider value={{ count, dispatchCount }} >
         <UseReducerWithContext />
       </CountContext.Provider>
-      
+      <hr />
+      <DataFetchingWithUseReducer />
       {/* <BrowserRouter>
         <Routes>
           <Route index element={<Home/>} />
