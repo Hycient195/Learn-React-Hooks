@@ -22,7 +22,7 @@ export default function MultipleUseReducers(){
 
   return(
     <>
-      <h1>Using Multiple UseReduce Hooks</h1>
+      <h1>Using Multiple UseReducer Hooks</h1>
       <p>
         In a situation where there are more than one state sharing similar state 
         changes, and initial state, another way instead of creating the initial 

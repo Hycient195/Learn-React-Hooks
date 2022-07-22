@@ -9,6 +9,7 @@ import MultipleUseReducers from './04. UseReducer/04. Multiple_UseReducers';
 import './App.css';
 import UseReducerWithContext from './04. UseReducer/05. UseReducer_With_Context';
 import DataFetchingWithUseReducer from './04. UseReducer/06. Data_Fetching_With_UseReducer';
+import UseCallbackHook from './05. UseCallback/01. UseCallback_Hook';
 
 
 
@@ -60,6 +61,8 @@ function App() {
       </CountContext.Provider>
       <hr />
       <DataFetchingWithUseReducer />
+      <hr />
+      <UseCallbackHook />
       {/* <BrowserRouter>
         <Routes>
           <Route index element={<Home/>} />
