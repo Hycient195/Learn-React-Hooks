@@ -202,9 +202,10 @@ export default function UseCallbackHook(){
         the same way as the dependency array to useEffect.
       </p>
       <p>
-        Using the useCallback hook specifies that a handle should 
+        Using the useCallback hook specifies that a handler should 
         only be reinitialized only when a dependency to it changes,
         which in turn re-renders the component dependent on it.
+        The useCallback hook is used for performance optimization.
       </p>
 
       <dl>

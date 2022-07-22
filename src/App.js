@@ -10,6 +10,8 @@ import './App.css';
 import UseReducerWithContext from './04. UseReducer/05. UseReducer_With_Context';
 import DataFetchingWithUseReducer from './04. UseReducer/06. Data_Fetching_With_UseReducer';
 import UseCallbackHook from './05. UseCallback/01. UseCallback_Hook';
+import UseMemoHook from './06. UseMemo/01. UseMemo_Hook';
+import UseRefHook from './07. UseRef/01. UseRef_Hook';
 
 
 
@@ -60,9 +62,17 @@ function App() {
         <UseReducerWithContext />
       </CountContext.Provider>
       <hr />
-      <DataFetchingWithUseReducer />
+      {/* <DataFetchingWithUseReducer /> */}
       <hr />
-      <UseCallbackHook />
+      {/* <UseCallbackHook /> */}
+      <hr />
+      {/* <UseMemoHook />a */}
+      <UseRefHook />
+
+
+
+
+
       {/* <BrowserRouter>
         <Routes>
           <Route index element={<Home/>} />
