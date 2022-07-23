@@ -42,11 +42,11 @@ function App() {
     <div className="App">
       <h1 className="title centralize">React Hooks</h1>
       <hr />
-      {/* <UseEffectCleanup /> */}
+      <UseEffectCleanup />
       <hr />
       <UserContext.Provider value={user} >
         <ArticleContext.Provider value={article} >
-          {/* <UseContextHook /> */}
+          <UseContextHook />
         </ArticleContext.Provider>
       </UserContext.Provider>
       <hr />
@@ -68,6 +68,16 @@ function App() {
       <hr />
       {/* <UseMemoHook />a */}
       <UseRefHook />
+
+
+
+
+
+
+      <hr />
+      <footer>
+        <p className='centralize' >For comments and questions, reach out using <a target="_blank" href="https://hycient.vercel.app/contact-me">this link</a></p>
+      </footer>
 
 
 
