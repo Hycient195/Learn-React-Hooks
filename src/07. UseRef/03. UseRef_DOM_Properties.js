@@ -5,9 +5,9 @@ export default function UseRefDOMProperties(){
 
   const setBackgroundColor = () =>{
     // Change background color;
-    testElementRef.current.style.backgroundColor = "teal";
+    testElementRef.current.style.backgroundColor = "orange";
     // Change text color;
-    testElementRef.current.style.color = "white";
+    testElementRef.current.style.color = "teal";
     // Toggle class name
     testElementRef.current.classList.toggle("recent");
   }
@@ -27,8 +27,8 @@ export default function UseRefDOMProperties(){
   const testElementRef = useRef();
 
   const setBackgroundColor = () =>{
-    testElementRef.current.style.backgroundColor = "teal";
-    testElementRef.current.style.color = "white";
+    testElementRef.current.style.backgroundColor = "orange";
+    testElementRef.current.style.color = "real";
 
     // Toggle class name
     testElementRef.current.classList.toggle("recent");
@@ -40,6 +40,57 @@ export default function UseRefDOMProperties(){
       <button onClick={setBackgroundColor} >Implement Style</button>
     </>
   )
+}
+            `
+          }
+        </pre>
+      </code>
+
+      <p>
+        In the context of the instance above, a reference is created by 
+        invoking the useRef hook, and assigning its return value to a 
+        variable. 
+      </p>
+      <code>
+        <pre>
+          {
+            `
+const testElementRef = useRef();
+            `
+          }
+        </pre>
+      </code>
+      <p>
+        A "ref" attribute or prop is specified on the element to be referenced,
+        and the reference variable created from the useRef hook is passed as value
+        to this "ref" prop or attribute.
+      </p>
+      <code>
+        <pre>
+          {
+            `
+<h3 className="default" ref={testElementRef}>Test Text</h3>
+            `
+          }
+        </pre>
+      </code>
+      <p>
+        In useEffect or an appropriate handler, the reference variable can then
+        be used to access the DOM properties and methods of the element who received
+        it as value to its "ref" prop. This is acheived by specifying the reference
+        variable, calling it's "current" property, and then followed by the DOM
+        property or method to be accessed. (example: testElementRef.current.style.color)
+        which is used to access the text color of the element being referenced,
+        and a new color property is assigned to the element on the invocation of
+        the setBackgroundColor handler.
+      </p>
+      <code>
+        <pre>
+          {
+            `
+const setBackgroundColor = () =>{
+  testElementRef.current.style.backgroundColor = "orange";
+  testElementRef.current.style.color = "teal";
 }
             `
           }

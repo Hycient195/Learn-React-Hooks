@@ -42,17 +42,17 @@ function App() {
     <div className="App">
       <h1 className="title centralize">React Hooks</h1>
       <hr />
-      <UseEffectCleanup />
+      {/* <UseEffectCleanup /> */}
       <hr />
       <UserContext.Provider value={user} >
         <ArticleContext.Provider value={article} >
-          <UseContextHook />
+          {/* <UseContextHook /> */}
         </ArticleContext.Provider>
       </UserContext.Provider>
       <hr />
-      <UseReducerHook />
+      {/* <UseReducerHook /> */}
       <hr />
-      <ObjecStateWithUseReducer />
+      {/* <ObjecStateWithUseReducer /> */}
       <hr />
       <ObjectActionWithUseReducer />
       <hr />
