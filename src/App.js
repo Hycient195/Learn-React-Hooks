@@ -76,7 +76,7 @@ function App() {
 
       <hr />
       <footer>
-        <p className='centralize' >For comments and questions, reach out using <a target="_blank" href="https://hycient.vercel.app/contact-me">this link</a></p>
+        <p className='centralize' >Copyright &copy; <a target="_blank" href="https://hycient.vercel.app">Hycient</a> 2022</p>
       </footer>
 
 
