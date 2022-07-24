@@ -1,7 +1,9 @@
+import { useEffect } from "react";
 import { useRef } from "react";
 
 export default function UseRefDOMProperties(){
   const testElementRef = useRef();
+  const inputRef = useRef();
 
   const setBackgroundColor = () =>{
     // Change background color;
@@ -11,6 +13,10 @@ export default function UseRefDOMProperties(){
     // Toggle class name
     testElementRef.current.classList.toggle("recent");
   }
+
+  useEffect(()=>{
+    inputRef.current.focus();
+  }, [])
 
   return(
     
@@ -25,6 +31,7 @@ import { useRef } from "react";
 
 export default function UseRefDOMProperties(){
   const testElementRef = useRef();
+  const inputRef = useRef();
 
   const setBackgroundColor = () =>{
     testElementRef.current.style.backgroundColor = "orange";
@@ -37,6 +44,7 @@ export default function UseRefDOMProperties(){
   return(
     <>
       <h3 className="default" ref={testElementRef}>Test Text</h3>
+      <input type="text" ref={inputRef} placeholder="input focused on page load" />
       <button onClick={setBackgroundColor} >Implement Style</button>
     </>
   )
@@ -56,6 +64,7 @@ export default function UseRefDOMProperties(){
           {
             `
 const testElementRef = useRef();
+const inputRef = useRef();
             `
           }
         </pre>
@@ -70,6 +79,8 @@ const testElementRef = useRef();
           {
             `
 <h3 className="default" ref={testElementRef}>Test Text</h3>
+<input type="text" ref={inputRef} placeholder="input focused on page load" />
+
             `
           }
         </pre>
@@ -92,6 +103,10 @@ const setBackgroundColor = () =>{
   testElementRef.current.style.backgroundColor = "orange";
   testElementRef.current.style.color = "teal";
 }
+
+useEffect(()=>{
+  inputRef.current.focus();
+}, [])
             `
           }
         </pre>
@@ -101,6 +116,7 @@ const setBackgroundColor = () =>{
         <dt><h3>Example Output:</h3></dt>
         <dd>
           <h3 className="default" ref={testElementRef}>Test Text</h3>
+          <input type="text" ref={inputRef} placeholder="input focused on page load" />
           <button onClick={setBackgroundColor} >Implement Style</button>
         </dd>
       </dl>

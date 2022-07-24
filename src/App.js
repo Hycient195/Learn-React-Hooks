@@ -50,9 +50,9 @@ function App() {
         </ArticleContext.Provider>
       </UserContext.Provider>
       <hr />
-      {/* <UseReducerHook /> */}
+      <UseReducerHook />
       <hr />
-      {/* <ObjecStateWithUseReducer /> */}
+      <ObjecStateWithUseReducer />
       <hr />
       <ObjectActionWithUseReducer />
       <hr />
@@ -62,11 +62,11 @@ function App() {
         <UseReducerWithContext />
       </CountContext.Provider>
       <hr />
-      {/* <DataFetchingWithUseReducer /> */}
+      <DataFetchingWithUseReducer />
       <hr />
-      {/* <UseCallbackHook /> */}
+      <UseCallbackHook />
       <hr />
-      {/* <UseMemoHook />a */}
+      <UseMemoHook />a
       <UseRefHook />
 
 
@@ -76,7 +76,7 @@ function App() {
 
       <hr />
       <footer>
-        <p className='centralize' >Copyright &copy; <a target="_blank" href="https://hycient.vercel.app">Hycient</a> 2022</p>
+        <p className='centralize' >Copyright &copy; <a target="_blank" rel='noreferrer' href="https://hycient.vercel.app">Hycient</a> 2022</p>
       </footer>
 
 
